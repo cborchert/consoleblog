@@ -1,0 +1,25 @@
+@use "styles/typography" as *;
+@use "styles/spacing" as *;
+@use "styles/theme" as *;
+@use "styles/borders" as *;
+
+.Header {
+  @include font-title;
+  @include size(4);
+  @include border-bottom;
+  margin: 0 auto space(4);
+  line-height: 1;
+  display: block;
+
+  &,
+  &:hover {
+    @include color-text;
+    text-decoration: none;
+  }
+
+  mark {
+    @include font-mono;
+    @include color-primary;
+    background: transparent;
+  }
+}

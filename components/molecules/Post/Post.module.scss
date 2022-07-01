@@ -1,0 +1,10 @@
+@use "styles/spacing" as *;
+
+.Post__header {
+  margin-bottom: space(4);
+}
+
+.Post__title,
+.Post__date {
+  margin: space(2) 0;
+}
